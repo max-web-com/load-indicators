@@ -1,0 +1,48 @@
+<template> 
+	<svg viewBox='30 30 240 240' preserveAspectRatio="xMinYMin">
+		<path d="M 236 100 A 100 100 0 0 0 150 50"></path>
+		<path d="M 150 250 A 100 100 0 0 0 236 200"></path>
+		<path d="M 63 99 A 100 100 0 0 0 63 200"></path>
+		<!-- <path id="arc1" fill="none" stroke="#446688" stroke-width="20" d="M 236.60254037844388 200 A 100 100 0 0 0 236.60254037844388 100"></path> -->
+	</svg>
+</template>  
+
+<!-- http://jsbin.com/gayoyuyacu/edit?html,js,output -->
+
+<style> 
+	:host{
+		display: inline-block;
+		/*transform-origin: 50% 50%;*/
+		animation: spin 2s linear infinite;
+		border-radius: 100%;
+		width: 100px;
+	}
+	:host([hidden]){ 
+		display: none;
+	}
+  	svg { 
+  		background: transparent; 
+  		/*width: 80px;*/
+  	}
+
+	@keyframes spin { 
+		100% { transform: rotate(360deg); } 
+	}
+
+  	svg path {
+  		stroke: var(--color, #333); 
+  		stroke-width: 30; 
+  		stroke-linecap: round; 
+  		fill: none;
+  	}
+</style>
+
+<script>
+    show(){
+        this.hidden=false;
+    }
+    hide(){
+        this.hidden=true;
+    }
+	
+</script>
