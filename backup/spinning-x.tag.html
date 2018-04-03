@@ -1,0 +1,61 @@
+<template>
+    <div>&#x2600;</div>
+    <div>&#x2605;</div>
+    <div>&#10038;</div>
+    <div>&#x25B2;</div>
+    <div>&#x25A0;</div>
+    
+
+</template>
+<!-- &times; -->
+        
+
+<script>
+    show(){
+        this.hidden=false;
+    }
+    hide(){
+        this.hidden=true;
+    }
+</script>
+ 
+
+
+<style>
+    :host{
+        display: inline-block;
+        position: relative;
+        font-size: var(--size, 100px);
+        border-radius: 100%;
+    }
+    :host([hidden]){
+        display: none;    
+    }
+    div{
+        /*position: absolute;*/
+        /*left:0%;*/
+        /*right:100%;*/
+        /*height: 30px;*/
+        /*display: inline-block;*/
+        /*padding:0 10px;*/
+        /*margin:0;*/
+        color: var(--color, CornflowerBlue);
+        /*background: gray;*/
+        /*border-radius: 100px;*/
+        animation: spin infinite;
+        animation-duration: var(--duration, 3s);
+        animation-timing-function: var(--timing, linear);
+    }
+    @keyframes spin { 
+        100% { transform: rotate(360deg); } 
+    }
+
+/*    @keyframes move {
+        0% {-webkit-transform:rotate(0deg)}
+        25% {-webkit-transform:rotate(90deg)}
+        50% {-webkit-transform:rotate(180deg)}
+        75% {-webkit-transform:rotate(270deg)}
+        100% {-webkit-transform:rotate(360deg)}
+    }
+*/    
+</style>

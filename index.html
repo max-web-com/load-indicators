@@ -1,0 +1,57 @@
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+<script src='off-line.tag.js'></script>
+
+<script src='build/moving-stripe.tag.js'></script>
+<script src='build/moving-circle.tag.js'></script>
+<script src='build/spinning-x.tag.js'></script>
+<script src='build/circle-spinner.tag.js'></script>
+<script src='build/circle-pulse.tag.js'></script>
+
+
+
+
+<style>
+	body{text-align: center;}
+	moving-stripe{width:200px; --color:#333; --speed: 1.3s; --timing: linear;}
+	moving-circle{width: 120px; }
+	circle-spinner{width: 120px;}
+	/*spinning-x{--color: #333;}*/
+	/*input{font-size: 70px; height: 50px; display: block;-webkit-appearance:none; }*/
+	off-line{font-family: fixed;}
+</style>
+
+<off-line>offline</off-line> 
+
+<h1>Stripe</h1>
+<moving-stripe></moving-stripe>
+
+<br/>
+<br/>
+
+<h1>Circle</h1>
+<moving-circle></moving-circle>
+<circle-spinner></circle-spinner>
+<br/>
+<br/>
+
+<h1>Pulse</h1>
+<circle-pulse></circle-pulse>
+<br/>
+<br/>
+
+<!-- 
+<h1>Unicode</h1>
+<spinning-unicode></spinning-unicode>
+<spinning-x></spinning-x>
+<br/>
+<br/>
+
+
+<br/>
+<br/>
+
+<button onclick="document.querySelector('moving-stripe').show()">show</button>
+<button onclick="document.querySelector('moving-stripe').hide()">hide</button>
+ -->
+
