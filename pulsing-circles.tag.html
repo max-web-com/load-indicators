@@ -6,13 +6,17 @@
 
 
 <style>
+	:host{
+		white-space: nowrap;
+		--size: 70px;
+	}
 	div{
 		display: inline-block;
 		margin: 5px;
 		border-radius: 100%;
 		background: #333;
-		width: 100px;
-		height: 100px;
+		width: var(--size);
+		height: var(--size);
 	    animation: pulse 2s ease infinite;
 	    opacity: 0.2;
 	}
